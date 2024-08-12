@@ -97,7 +97,6 @@ p{
     margin: auto 1% 40px 1%;
     position: relative;
     cursor: pointer;
-    transition: all 0.3s ease;
     
 }
 .news-item:hover {
