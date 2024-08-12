@@ -569,6 +569,7 @@ iframe {
 }
 .rfact img {
     width: 25px;
+    height: auto;
 }
 .cardlbl {
     width: 47px;
