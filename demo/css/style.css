@@ -576,6 +576,23 @@ iframe {
 .dropdown-content {
     min-width: 318px;
 }
+.hdrcon {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 30px;
+    margin-top: 0px;
+}
+#sidebar-btn {
+    margin: 0px 0% 0px 0;
+    font-size: 16px;
+    text-align: right;
+}
+#sidebar-btn img {
+    width: 46px;
+    margin-left: 0px;
+}
 
 }
 
