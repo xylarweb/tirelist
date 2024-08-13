@@ -327,12 +327,14 @@ margin-left: 5px;
     background: linear-gradient(1deg, #01bce9, #00fbff);
     border-radius: 11px;
     font-weight: 800;
+    transition: all .3s;
 }
+
 .dropbtn:after           { content: "\25bc";margin-left: 10px; }
 .dropbtn.is-active:after { content: "\25b2";margin-left: 10px; }
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+.dropbtn:hover {
+  background: linear-gradient(1deg, #00fbff, #01bce9);
 }
 .dropdown {
   margin-left: 20px;
@@ -412,7 +414,7 @@ margin-left: 4px;
     left: 41%;
     list-style: none;
     height: 70vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     scrollbar-color: #212121 #dcdcdc;
     scrollbar-width: thin;
     width: 80%;
@@ -459,6 +461,9 @@ margin-left: 4px;
     color: #fff;
     font-size: 16px;
     font-weight: 800;
+        display: flex;
+    align-items: center;
+
 }
 #sidebar-btn img {
     width: 50px;
@@ -604,6 +609,7 @@ h1 {
     margin: 0px 0% 0px 0;
     font-size: 14px;
     text-align: center;
+    flex-direction: column;
 }
 #sidebar-btn img {
     width: 46px;
