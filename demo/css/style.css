@@ -31,7 +31,14 @@ select option{
     opacity: .8;
     z-index: -1;
 }
-
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 104px;
+    margin-right: 18px;
+}
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -267,7 +274,7 @@ margin-bottom: 30px;
     background: linear-gradient(274deg, #ffffff, #ffffff63);
     color: #000000;
     display: inline-block;
-    padding: 0px 40px 0px 7%;
+    padding: 0px 40px 0px 95px;
     border-radius: 30px;
 }
 .sectitle img {
@@ -400,12 +407,12 @@ margin-left: 4px;
 }
 #sidebar ul {
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 53%;
+    transform: translate(-50%, 0%);
+    top: 24%;
     left: 41%;
     list-style: none;
-    height: 60vh;
-    overflow-y: scroll;    
+    height: 70vh;
+    overflow-y: scroll;
     scrollbar-color: #212121 #dcdcdc;
     scrollbar-width: thin;
     width: 80%;
@@ -522,7 +529,7 @@ iframe {
 
 @media (max-width: 1024px) {
 .sectitle {
-    padding: 0px 40px 0px 10%;
+    padding: 0px 40px 0px 85px;
 }
 
 	
@@ -541,7 +548,9 @@ iframe {
 .news-item.active {
     width: 58%;
 }
-
+h1 {
+    font-size: 28px;
+}
 	
 }
 @media (max-width: 768px) {
@@ -549,13 +558,15 @@ iframe {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 670px) {
 .news-item {
     width: 28%;
     margin: auto 2% 30px 2%;
 }
 .sectitle {
-    padding: 0px 40px 0px 25%;
+    padding: 0px 40px 0px 85px;
+    font-size: 22px;
+    
 }
 .news-item.active {
     width: 90%;
@@ -581,23 +592,68 @@ iframe {
     justify-content: space-between;
 }
 h1 {
-    font-size: 30px;
-    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
 #sidebar-btn {
     margin: 0px 0% 0px 0;
-    font-size: 16px;
-    text-align: right;
+    font-size: 14px;
+    text-align: center;
 }
 #sidebar-btn img {
     width: 46px;
     margin-left: 0px;
+            display: block;
 }
-
+.logo img {
+    width: 66px;
+    margin-right: 12px;
+}
+.dropbtn {
+    font-size: 14px;
+}
 }
 
 @media (max-width: 350px) {
-
-
+h1 {
+    font-size: 15px;
+}
+#sidebar-btn img {
+    width: 38px;
+}
+.sectitle img {
+    max-width: 54px;
+}
+.sectitle {
+    padding: 0px 40px 0px 75px;
+    
+}
+.news-item.active .unme {
+    font-size: 10px;
+}
+.news-item h2 {
+    font-size: 13px;
+}
+.rfact img {
+    width: 20px;
+    height: auto;
+}
+.dtlbg img {
+    height: 27px;
+}
+.dttbl {
+    font-size: 11px;
+}
+.unme {
+    font-size: 10px;
+    line-height: 10px;
+}
+#sidebar-btn {
+    font-size: 10px;
+}
+#sidebar li, #sidebar li a {
+    font-size: 16px;
+}
 	
 }
