@@ -53,7 +53,25 @@
 
 </div>
 
+<div class="iframemarg" >
 
+</div>
+
+<div class="h-full overflow-hidden">
+ <iframe src="https://docs.google.com/spreadsheets/d/1G4Td-hSY-XFGfl3gnCvh_f0SRPs5Zi2ViarcW5qe9Ik/pubhtml?widget=true&amp;headers=false"></iframe>
+</div>
+
+</div>
+                   
+                   
+ </div>                   
+</div>
+</div>
+<div class="iframemarg" >
+
+</div>
+
+<!--
 <div class="filterset">
 SEARCH <input type="text" id="search-input" placeholder="Search...">
 
@@ -1311,13 +1329,17 @@ OVERALL TIER
     
     
 </section>
-
+-->
 </div>
                    
                    
  </div>                   
 </div>
 </div>
+
+<a id="toTop" href="#" class="">
+            <img class="" src="images/up.png" alt=""/>  </a>
+
 <div class="overlay"></div>
 
 
@@ -1339,6 +1361,20 @@ $('#toggle').click(function() {
 });
 
 
+
+// Gototop-------------------------------------- 
+$(window).scroll(function() {
+            if ( $(this).scrollTop() > 500 ) {
+                $('#toTop').addClass('showsx');              
+               
+            } else {
+                $('#toTop').removeClass('showsx');                
+            }
+        });
+
+       $('#toTop').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+});
 </script>
 </body>
 
