@@ -12,6 +12,17 @@ font-family: "Poppins", sans-serif;
       background-attachment: fixed;
 
 }
+.dwtlh {
+    margin-top: 10px ;
+}
+.dwtl {
+    display: inline-block;
+    width: 44px;
+    margin: 13px 16px 7px 0px;
+}
+.dwtl img{
+width: 100%;
+}
 button, input, select, textarea {
     border-radius: 20px;
     padding: 3px 10px;
