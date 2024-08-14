@@ -562,6 +562,9 @@ width: 100%;
 h1 {
     font-size: 28px;
 }
+.h-full {
+    max-height: 85vh;
+}
 	
 }
 @media (max-width: 768px) {
