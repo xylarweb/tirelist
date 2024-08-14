@@ -65,34 +65,7 @@ p{
   max-width:1920px;
 }
 
-#toTop {
-    position: fixed;
-    right: 15px;
-    bottom: 30px;
-    margin: 0;
-    z-index: 3;
-    opacity: 0;
-    visibility: hidden;
-        width: 35px;
-    cursor: pointer;
-    background-color: #010f85;   
-    height: 35px;
-        border-radius: 35px;
-        text-align: center;
-}
-#toTop i {
-    font-size: 18px;
-    color: #fff;
-     line-height: 32px;
-    padding-bottom: 3px;
-}
-.shows {
-    opacity: 1!important;
-    visibility: visible!important;
-    -webkit-transition: opacity .3s ease;
-    -moz-transition: opacity .3s ease;
-    transition: opacity .3s ease;
-}
+
 .news-item {
     display: inline-block;
     vertical-align: top;
@@ -360,7 +333,10 @@ margin-left: 5px;
 }
 .dropdown a:hover {background-color: #ddd;}
 .showd {display: block;}
-#sort-tire{margin-left: 5px;}
+#sort-tire {
+    margin-left: 5px;
+    min-width: 75px;
+}
 #noresults {
     font-weight: 700;
     font-size: 16px;
@@ -518,6 +494,32 @@ iframe {
     padding: 5px;
     background: #fff;
 }
+#toTop {
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    margin: 0;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+        width: 50px;
+    cursor: pointer;  
+    height: 50px;
+        border-radius: 35px;
+        text-align: center;
+}
+#toTop img {
+width: 100%;
+}
+.showsx {
+    opacity: 1!important;
+    visibility: visible!important;
+    -webkit-transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+}
+
+
 @media (max-width: 1500px) {
 
 
