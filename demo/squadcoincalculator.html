@@ -1,0 +1,180 @@
+<!DOCTYPE html">
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Top Troops Tierlist - Squad Coin Calculator</title>
+      <meta name="description" content="The unit tier list for Top Troops game. This is an unofficial list which was prepared with the help of players from top 25 clans in the game">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <script>
+         $(function(){
+            $("#sidebar").load("header.html", function() {
+                // Now bind the event handler after the content is loaded
+                $('#sidebar').on('click', '#sidebacls', function(){
+                    $('#sidebar').toggleClass('visible');
+                });
+            }); 
+         });
+      </script>
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <style>
+	  #errorOutput{
+	  color:#ffa0a0;
+	  }
+	  .divpd {
+    margin-top: 10px;
+    max-width: 443px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+	  .sqbtn {
+    background: #8BC34A;
+    color: #fff;
+    border-color: #8BC34A;
+    padding: 2px 16px;
+    margin-left: 10px;
+    width: 144px;
+}
+#xp-result {
+    width: 100%;
+    max-width: 351px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #fff;
+}
+
+@media (max-width: 670px) {
+.divpd {
+    flex-direction: column;
+}
+.sqbtn {
+    margin-left: 0!important;
+}
+button, input, select, textarea {
+    display: block;
+    width: 100%;
+    margin-left: 0!important;
+    margin-bottom: 5px;
+}
+}
+      </style>
+   </head>
+   <body>
+   <div class="bgovl"></div>
+   <div style="padding-top: 20px;" >
+<div class="containerc">
+                    <div class="row " >
+
+                    <div class="col-md-12 col-sm-12 " >
+<div class="hdrcon"><div class="logo"> <a href="index.html"><img class="" src="images/logo.png" alt="Top Troops Tirelist"/></a> <h1>TOP TROOPS<br>
+<span class="colr1">SQUAD COIN CALCULATOR</span></h1></div>
+
+<a id="sidebar-btn" class="">MENU <img src="images/menu.png" alt=""> </a>
+</div>
+
+<div id="sidebar" class="">
+
+</div>					
+				<br>				
+					
+    <h2>Select Level Range</h2>
+    
+    <!-- Level Range Selection -->
+    <label for="levelStart">Start Level:</label>
+    <input type="number" id="levelStart" name="levelStart" min="1" max="300" value="1">
+
+    <label for="levelEnd">End Level:</label>
+    <input type="number" id="levelEnd" name="levelEnd" min="1" max="300" value="150">
+
+    <!-- Display Selected Range -->
+    <div>
+        <h2></h2>
+        <p id="selectionOutput"></p>
+        <p id="errorOutput" class="error"></p>
+    </div>
+	
+    <h2>Select XP Materials</h2>
+    
+    <!-- Dropdowns to select rank and buttons to add selections -->
+    <div class="divpd">
+        <label for="trainerRank">Trainer Rank:</label>
+        <select id="trainerRank">
+            <option value="" disabled selected>Select Rank</option>
+			<option value="4">Rank 4</option>
+			<option value="3">Rank 3</option>
+			<option value="2">Rank 2</option>
+            <option value="1">Rank 1</option>
+        </select>
+        <button class="sqbtn" onclick="addSelection('Trainer')">Add Trainer</button>
+    </div>
+	<div class="divpd">
+        <label for="rareRank">Rare Rank:</label>
+        <select id="rareRank">
+            <option value="" disabled selected>Select Rank</option>
+			<option value="4">Rank 4</option>
+			<option value="3">Rank 3</option>
+			<option value="2">Rank 2</option>
+        </select>
+        <button class="sqbtn" onclick="addSelection('Rare')">Add Rare</button>
+    </div>
+    <div class="divpd">
+        <label for="commonRank">Common Rank:</label>
+        <select id="commonRank">
+            <option value="" disabled selected>Select Rank</option>
+			<option value="4">Rank 4</option>
+			<option value="3">Rank 3</option>
+			<option value="2">Rank 2</option>
+            <option value="1">Rank 1</option>
+        </select>
+        <button class="sqbtn" onclick="addSelection('Common')">Add Common</button>
+    </div>
+	
+	<!-- Selections List -->
+    <div class="selection-container">
+        <h2></h2>
+        <div id="selections"></div>
+        <p id="errorOutput" class="error"></p>
+    </div>
+	
+	<!-- <button onclick="grabLevels()">C</button> -->
+
+    <!-- Display the selected JSON items -->
+    <h2>XP & Squad Coins</h2>
+    <pre id="xp-result"></pre>
+	</div>
+                   
+                   
+ </div>                   
+</div>
+</div>
+
+    <script src="squadcoincalculator.js"></script>
+	<script>
+// Menu-------------------------------------- 
+$(document).ready(function(){
+		$('#sidebar-btn').click(function(){
+			$('#sidebar').toggleClass('visible');
+            
+		});
+	});
+$('#toggle').click(function() {
+   /* $(this).toggleClass('toggle-active');*/
+    $('#sidebar').toggleClass('visible');
+});
+
+</script>
+   </body>
+</html>
