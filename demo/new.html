@@ -44,7 +44,7 @@
 
                           
 <div class="hdrcon"><div class="logo"> <a href="index.html"><img class="" src="images/logo.png" alt="Top Troops Tirelist"/></a> <h1>TOP TROOPS<br>
-<span class="colr1">HERO TIER LIST v4</span></h1></div>
+<span class="colr1">HERO TIER LIST v4</span><div class="lastup">Last Update: 07/16/2023 by SomeoneYouKnow (@stoiczephyr)</div></h1></div>
 
 <a id="sidebar-btn" class="">MENU <img src="images/menu.png" alt=""> </a>
 </div>
@@ -55,76 +55,76 @@
 
 
 <div class="filterset">
-SEARCH <input type="text" id="search-input" placeholder="Search...">
+    SEARCH <input type="text" id="search-input" placeholder="Search...">
 
 
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">FILTER</button>
-  <div id="myDropdown" class="dropdown-content">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">FILTER</button>
+      <div id="myDropdown" class="dropdown-content">
+        <div class="sort">
+      RARITY
+      <div class="radio-wrapper">
+        <div class="cardlbl"><input type="radio" name="rarity" id="rarity-all" value="." checked>
+        <label for="rarity-all"><img class="" src="images/all.png" title="All"/></label></div>
+
+        <div class="cardlbl"><input type="radio" name="rarity" id="rarity-legendary" value="legendary">
+        <label for="rarity-legendary"><img class="" src="images/legendary.png" title="Legendary"/></label></div>
+
+        <div class="cardlbl"><input type="radio" name="rarity" id="rarity-epic" value="epic">
+        <label for="rarity-epic"><img class="" src="images/epic.png" title="Epic"/></label></div>
+
+        <div class="cardlbl"><input type="radio" name="rarity" id="rarity-rare" value="rare">
+        <label for="rarity-rare"><img class="" src="images/rare.png" title="Rare"/></label></div>
+
+        <div class="cardlbl"><input type="radio" name="rarity" id="rarity-common" value="common">
+        <label for="rarity-common"><img class="" src="images/common.png" title="Common"/></label></div>
+      </div>
+    </div>
+
     <div class="sort">
-  RARITY
-  <div class="radio-wrapper">
-    <div class="cardlbl"><input type="radio" name="rarity" id="rarity-all" value="." checked>
-    <label for="rarity-all"><img class="" src="images/all.png" title="All"/></label></div>
-    
-    <div class="cardlbl"><input type="radio" name="rarity" id="rarity-legendary" value="legendary">
-    <label for="rarity-legendary"><img class="" src="images/legendary.png" title="Legendary"/></label></div>
-    
-    <div class="cardlbl"><input type="radio" name="rarity" id="rarity-epic" value="epic">
-    <label for="rarity-epic"><img class="" src="images/epic.png" title="Epic"/></label></div>
-    
-    <div class="cardlbl"><input type="radio" name="rarity" id="rarity-rare" value="rare">
-    <label for="rarity-rare"><img class="" src="images/rare.png" title="Rare"/></label></div>
-    
-    <div class="cardlbl"><input type="radio" name="rarity" id="rarity-common" value="common">
-    <label for="rarity-common"><img class="" src="images/common.png" title="Common"/></label></div>
-  </div>
-</div>
+      FACTION
+      <div class="radio-wrapper">
+         <div class="cardlbl"><input type="radio" name="faction" id="faction-all" value="." checked>
+        <label for="faction-all"><img class="" src="images/all.png" title="All"/></label></div>
 
-<div class="sort">
-  FACTION
-  <div class="radio-wrapper">
-     <div class="cardlbl"><input type="radio" name="faction" id="faction-all" value="." checked>
-    <label for="faction-all"><img class="" src="images/all.png" title="All"/></label></div>
-    
-     <div class="cardlbl"><input type="radio" name="faction" id="faction-militia" value="militia">
-    <label for="faction-militia"><img class="" src="images/militia.png" title="Militia"/></label></div>
-    
-     <div class="cardlbl"><input type="radio" name="faction" id="faction-wildling" value="wildling">
-    <label for="faction-wildling"><img class="" src="images/wildling.png" title="Wildling"/></label></div>
-    
-     <div class="cardlbl"><input type="radio" name="faction" id="faction-hunter" value="hunter">
-    <label for="faction-hunter"><img class="" src="images/hunter.png" title="Hunter"/></label></div>
-    
-     <div class="cardlbl"><input type="radio" name="faction" id="faction-divine" value="divine">
-    <label for="faction-divine"><img class="" src="images/divine.png" title="Divine"/></label></div>
-    
-     <div class="cardlbl"><input type="radio" name="faction" id="faction-infernal" value="infernal">
-    <label for="faction-infernal"><img class="" src="images/infernal.png" title="Infernal"/></label></div>
-  </div>
-</div>
+         <div class="cardlbl"><input type="radio" name="faction" id="faction-militia" value="militia">
+        <label for="faction-militia"><img class="" src="images/militia.png" title="Militia"/></label></div>
 
-<div class="sort">
-OVERALL TIER
-<select name="sort-tire" id="sort-tire">
-	<option value=".">All</option>
-    <option value="S+">S+</option>
-	<option value="S">S</option>
-	<option value="A+">A+</option>
-    <option value="A">A</option>
-	<option value="B+">B+</option>
-	<option value="B">B</option>
-    <option value="C+">C+</option>
-	<option value="C">C</option>
-	<option value="D">D</option>
-    <option value="E">E</option>
-	<option value="F">F</option>
-</select>
-</div>
-  </div>
-</div>
+         <div class="cardlbl"><input type="radio" name="faction" id="faction-wildling" value="wildling">
+        <label for="faction-wildling"><img class="" src="images/wildling.png" title="Wildling"/></label></div>
 
+         <div class="cardlbl"><input type="radio" name="faction" id="faction-hunter" value="hunter">
+        <label for="faction-hunter"><img class="" src="images/hunter.png" title="Hunter"/></label></div>
 
+         <div class="cardlbl"><input type="radio" name="faction" id="faction-divine" value="divine">
+        <label for="faction-divine"><img class="" src="images/divine.png" title="Divine"/></label></div>
+
+         <div class="cardlbl"><input type="radio" name="faction" id="faction-infernal" value="infernal">
+        <label for="faction-infernal"><img class="" src="images/infernal.png" title="Infernal"/></label></div>
+      </div>
+    </div>
+
+    <div class="sort">
+    OVERALL TIER
+    <select name="sort-tire" id="sort-tire">
+        <option value=".">All</option>
+        <option value="S+">S+</option>
+        <option value="S">S</option>
+        <option value="A+">A+</option>
+        <option value="A">A</option>
+        <option value="B+">B+</option>
+        <option value="B">B</option>
+        <option value="C+">C+</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+    </select>
+    </div>
+      </div>
+    </div>
+    
+    <a class="dropbtn greenb" href="https://drive.google.com/drive/folders/1Y8HXPD0MOoo231F0o1yvsel3chg1evb-" target="_blank">TIER LIST SHEET</a>
 
 </div>
 
