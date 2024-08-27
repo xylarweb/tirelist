@@ -12,6 +12,12 @@ font-family: "Poppins", sans-serif;
       background-attachment: fixed;
 
 }
+.lastup {
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 4px;
+    line-height: 20px;
+}
 .dwtlh {
     margin-top: 10px ;
 }
@@ -222,6 +228,7 @@ h1{
 color: #fff;
 font-weight: 800;
 text-shadow: 0 2px 3px rgba(0, 0, 0, 0.38);
+font-size: 30px;
 }
 h1 .colr1{
 color: #FF00E0;
@@ -313,12 +320,25 @@ margin-left: 5px;
     font-weight: 800;
     transition: all .3s;
 }
-
 .dropbtn:after           { content: "\25bc";margin-left: 10px; }
 .dropbtn.is-active:after { content: "\25b2";margin-left: 10px; }
-
 .dropbtn:hover {
   background: linear-gradient(1deg, #00fbff, #01bce9);
+}
+.greenb {
+    border: 2px solid #4CAF50;
+    background: linear-gradient(1deg, #8BC34A, #4CAF50);
+    margin-left: 10px;
+    text-decoration: none;
+        display: inline-block;
+}
+.greenb:after {
+content: none!important;
+}
+.greenb:hover {
+  background: linear-gradient(1deg, #4CAF50, #8BC34A);
+    text-decoration: none;
+    color: #fff;
 }
 .dropdown {
   margin-left: 20px;
@@ -600,8 +620,14 @@ h1 {
 .dropdown {
     margin-left: 0px;
     position: relative;
-    display: block;
+    display: inline-block;
     margin-top: 17px;
+}
+.greenb{
+        margin-top: 17px;
+}
+#search-input {
+    margin-right: 10px;
 }
 .rfact img {
     width: 25px;
