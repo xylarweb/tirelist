@@ -166,6 +166,11 @@ $(document).ready(function() {
             tireDiv.text('F');
             tireDiv.css('background-color', '#5b0f00');
         }
+        else if (tierText === 'NEW') {
+            $(this).attr('data-tire', 'NEW');
+            tireDiv.text('NEW');
+            tireDiv.css('background-color', '#f00');
+        }
     });
           
 });
