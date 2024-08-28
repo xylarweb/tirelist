@@ -12,6 +12,20 @@ font-family: "Poppins", sans-serif;
       background-attachment: fixed;
 
 }
+.footer{
+text-align: center;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.footer img, .footer a{
+ max-width: 40px; 
+    color: #fff;
+    font-size: 13px;
+}
+.footer:hover{
+ color: #fff;
+}
 .lastup {
     font-weight: 500;
     font-size: 12px;
