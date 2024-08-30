@@ -114,62 +114,67 @@ $(document).ready(function() {
         if (tierText === 'S+') {
             $(this).attr('data-tire', 'S+');
             tireDiv.text('S+');
-            tireDiv.css('background-color', '#673AB7');
+            tireDiv.css('background-color', '#a152cb');
         } 
         else if (tierText === 'S') {
             $(this).attr('data-tire', 'S');
             tireDiv.text('S');
-            tireDiv.css('background-color', '#737ddc');
+            tireDiv.css('background-color', '#005392');
         } 
         else if (tierText === 'A+') {
             $(this).attr('data-tire', 'A+');
             tireDiv.text('A+');
-            tireDiv.css('background-color', '#8ac3d8');
+            tireDiv.css('background-color', '#65a8da');
         } 
         else if (tierText === 'A') {
             $(this).attr('data-tire', 'A');
             tireDiv.text('A');
-            tireDiv.css('background-color', '#7dd8c9');
+            tireDiv.css('background-color', '#65a8da');
         } 
         else if (tierText === 'B+') {
             $(this).attr('data-tire', 'B+');
             tireDiv.text('B+');
-            tireDiv.css('background-color', '#7fd2a6');
+            tireDiv.css('background-color', '#8cc382');
         } 
         else if (tierText === 'B') {
             $(this).attr('data-tire', 'B');
             tireDiv.text('B');
-            tireDiv.css('background-color', '#c3d985');
+            tireDiv.css('background-color', '#8cc382');
         } 
         else if (tierText === 'C+') {
             $(this).attr('data-tire', 'C+');
             tireDiv.text('C+');
-            tireDiv.css('background-color', '#e8d17c');
+            tireDiv.css('background-color', '#f5c245');
         } 
         else if (tierText === 'C') {
             $(this).attr('data-tire', 'C');
             tireDiv.text('C');
-            tireDiv.css('background-color', '#e5806d');
+            tireDiv.css('background-color', '#f5c245');
+        } 
+        else if (tierText === 'D+') {
+            $(this).attr('data-tire', 'D+');
+            tireDiv.text('D+');
+            tireDiv.css('background-color', '#ff752b');
         } 
         else if (tierText === 'D') {
             $(this).attr('data-tire', 'D');
             tireDiv.text('D');
-            tireDiv.css('background-color', '#ff0000');
+            tireDiv.css('background-color', '#ff752b');
         } 
         else if (tierText === 'E') {
             $(this).attr('data-tire', 'E');
             tireDiv.text('E');
-            tireDiv.css('background-color', '#a61c00');
+            tireDiv.css('background-color', '#e6233d');
         } 
         else if (tierText === 'F') {
             $(this).attr('data-tire', 'F');
             tireDiv.text('F');
-            tireDiv.css('background-color', '#5b0f00');
+            tireDiv.css('background-color', '#8c1425');
         }
         else if (tierText === 'NEW') {
             $(this).attr('data-tire', 'NEW');
             tireDiv.text('NEW');
-            tireDiv.css('background-color', '#f00');
+            tireDiv.css('background-color', '#ff538e');
         }
     });
           
