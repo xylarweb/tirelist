@@ -776,10 +776,13 @@ h1 {
 .gridlistcon span{
     display: none;
 }
+.gridlist {
+    margin-left: 0px;
+}
 
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
 h1 {
     font-size: 15px;
 }
@@ -818,6 +821,10 @@ h1 {
 }
 #sidebar li, #sidebar li a {
     font-size: 16px;
+}
+.gridlistcon {
+    margin-left: 0px;
+    margin-top: 10px;
 }
 	
 }
