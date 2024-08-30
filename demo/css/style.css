@@ -564,6 +564,91 @@ width: 100%;
     -moz-transition: opacity .3s ease;
     transition: opacity .3s ease;
 }
+.gridlistcon{
+display: inline-block;
+margin-left: 15px;
+}
+.gridlist{
+    display: inline-block;
+    max-width: 43px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.gridlist img{
+   width: 100%;
+}
+
+
+/*----------------listview------------------*/
+
+.list:not(.active) {
+    display: flex;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #FFC107;
+    border-radius: 0;
+    margin: auto 1% 24px 1%;
+    padding-bottom: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    flex-wrap: wrap;
+}
+.list:not(.active) .tire {
+    position: initial;
+    display: inline-block;
+    margin-right: 14px;
+    vertical-align: middle;
+}
+.list:not(.active) .thumb {
+    width: 5%;
+    display: inline-block;
+}
+.list:not(.active) .news-txt {
+    padding: 3px 10px 3px 10px;
+    display: inline-block;
+    height: auto;
+}
+.list:not(.active) .unme {
+    color: #fff!important;
+    text-align: center;
+}
+.list:not(.active) .rfact {
+    position: initial;
+    transform: none;
+    display: inline-block;
+}
+.list:not(.active) .details {
+    display: inline-block!important;
+}
+.list:not(.active) .dtlbg {
+    display: inline-block;
+    align-items: center;
+    padding: 2px 10px;
+    margin-top: 0px;
+    background: none;
+    vertical-align: middle;
+}
+.list:not(.active) .dtlitm {
+       display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.list:not(.active) h2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.list:not(.active) .dtlbg .ppx {
+    display: inline-block;
+}
+.list:not(.active) .dttbl {
+    background: rgb(255, 255, 255, 0.22);
+    color: #fff;
+    border-top: 1px solid!important;
+}
+.list:not(.active) .dttbl td{
+padding: 0px 2px;
+}
 
 
 @media (max-width: 1500px) {
@@ -680,6 +765,18 @@ h1 {
 .dropbtn {
     font-size: 14px;
 }
+
+.list:not(.active) .thumb {
+    width: 14%;
+    display: inline-block;
+}
+.gridlistcon {
+    margin-left: 10px;
+}
+.gridlistcon span{
+    display: none;
+}
+
 }
 
 @media (max-width: 350px) {
