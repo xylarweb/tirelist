@@ -593,6 +593,7 @@ margin-left: 15px;
     align-items: center;
     background: none;
     flex-wrap: wrap;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.38);
 }
 .list:not(.active) .tire {
     position: initial;
@@ -673,7 +674,9 @@ padding: 0px 2px;
 .sectitle {
     padding: 0px 40px 0px 85px;
 }
-
+.list:not(.active) .news-txt {
+    width: 27%;
+}
 	
 }
 
@@ -707,6 +710,9 @@ h1 {
 .news-item {
     width: 28%;
     margin: auto 2% 30px 2%;
+}
+.list:not(.active) .news-txt {
+    width: 33%;
 }
 .sectitle {
     padding: 0px 40px 0px 85px;
