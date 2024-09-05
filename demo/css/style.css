@@ -536,9 +536,9 @@ iframe {
     height: 100%;
     border: 6px solid #fdab1a;
     border-radius: 20px;
-    padding: 5px;
-    background: #fff;
-	    max-height: 72vh;
+    padding: 0px;
+    background: transparent;
+    max-height: 72vh;
 }
 #toTop {
     position: fixed;
