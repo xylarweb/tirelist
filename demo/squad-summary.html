@@ -146,7 +146,7 @@ document.getElementById('search-input').addEventListener('keyup', function() {
     var articles = document.querySelectorAll('.sqitem');
 
     articles.forEach(function(article) {
-        var h2 = article.querySelector('h2'); // Find the h2 inside each sqitem
+        var h2 = article.querySelector('h3'); // Find the h2 inside each sqitem
         if (h2) {
             var h2Text = h2.innerText.toLowerCase();
             if (h2Text.includes(searchTerm)) {
