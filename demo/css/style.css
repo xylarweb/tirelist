@@ -588,7 +588,7 @@ margin-left: 15px;
     margin-bottom: 25px;
 }
 .sqitemthumb {
-    width: 38%;
+    width: 20%;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -598,6 +598,7 @@ margin-left: 15px;
 width: 100%;
 }
 .sqitemdetails {
+    width: 80%;
     padding-right: 27px;
     padding-left: 3%;
     padding-bottom: 10px;
