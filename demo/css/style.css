@@ -584,7 +584,7 @@ margin-left: 15px;
     justify-content: space-between;
     align-items: stretch;
     overflow: hidden;
-    background: rgb(74, 74, 74, 0.67);
+    background: linear-gradient(352deg, rgb(0, 0, 0, 0.51), transparent);
     margin-bottom: 25px;
 }
 .sqitemthumb {
@@ -827,6 +827,7 @@ h1 {
     padding-right: 27px;
     padding-left: 27px;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 }
