@@ -603,6 +603,11 @@ width: 100%;
     padding-left: 3%;
     padding-bottom: 10px;
 }
+.sqcalcon {
+    padding: 32px;
+    background: rgb(0 0 0 / 46%);
+    border-radius: 20px;
+}
 
 
 
@@ -829,6 +834,7 @@ h1 {
     padding-bottom: 10px;
     width: 100%;
 }
+
 
 }
 
