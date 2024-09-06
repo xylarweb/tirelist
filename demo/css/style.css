@@ -431,7 +431,7 @@ margin-left: 4px;
 #sidebar ul {
     position: absolute;
     transform: translate(-50%, 0%);
-    top: 24%;
+    top: 19%;
     left: 41%;
     list-style: none;
     height: 70vh;
@@ -577,6 +577,33 @@ margin-left: 15px;
 .gridlist img{
    width: 100%;
 }
+.sqitem {
+    border: 2px solid #fff;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+    background: rgb(74, 74, 74, 0.67);
+    margin-bottom: 25px;
+}
+.sqitemthumb {
+    width: 38%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0, 0.25);
+}
+.sqitemthumb img{
+width: 100%;
+}
+.sqitemdetails {
+    padding-right: 27px;
+    padding-left: 3%;
+    padding-bottom: 10px;
+}
+
+
 
 
 /*----------------listview------------------*/
@@ -784,6 +811,21 @@ h1 {
 }
 .gridlist {
     margin-left: 0px;
+}
+.sqitem {
+    flex-direction: column;
+}
+.sqitemthumb {
+    width: 100%;
+}
+.sqitemthumb img {
+    width: 40%;
+    margin: auto;
+}
+.sqitemdetails {
+    padding-right: 27px;
+    padding-left: 27px;
+    padding-bottom: 10px;
 }
 
 }
