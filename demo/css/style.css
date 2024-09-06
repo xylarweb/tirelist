@@ -578,14 +578,15 @@ margin-left: 15px;
    width: 100%;
 }
 .sqitem {
-    border: 2px solid #fff;
     border-radius: 18px;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     overflow: hidden;
     background: linear-gradient(352deg, rgb(0, 0, 0, 0.51), transparent);
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: 1px -1px 15px 0px #000;
 }
 .sqitemthumb {
     width: 20%;
@@ -593,6 +594,9 @@ margin-left: 15px;
     display: flex;
     align-items: center;
     background: rgb(0, 0, 0, 0.25);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 .sqitemthumb img{
 width: 100%;
@@ -601,14 +605,25 @@ width: 100%;
     width: 80%;
     padding-right: 27px;
     padding-left: 3%;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 23px;
 }
 .sqcalcon {
     padding: 32px;
-    background: rgb(0 0 0 / 46%);
+    background: rgb(0, 0, 0, 0.46);
     border-radius: 20px;
 }
-
+.sqovelay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-image: url("../images/bg.jpg");
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    opacity: 0.8;
+}
 
 
 
