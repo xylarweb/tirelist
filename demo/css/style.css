@@ -725,6 +725,9 @@ padding: 0px 2px;
 .list:not(.active) .news-txt {
     width: 27%;
 }
+.sqitemthumb {
+    width: 34%;
+}
 	
 }
 
