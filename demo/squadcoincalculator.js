@@ -93,7 +93,7 @@ function addSelection(type) {
 
 	const removeButton = document.createElement('button');
 	removeButton.innerText = 'Remove';
-	removeButton.className += 'sqbtn';
+	removeButton.className += 'sqbtn rmoveb';
 	removeButton.style.marginLeft = '10px';
 	removeButton.onclick = function() {
 		selectionDiv.remove();
