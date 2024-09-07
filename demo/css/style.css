@@ -434,12 +434,13 @@ margin-left: 4px;
     top: 19%;
     left: 41%;
     list-style: none;
-    height: 70vh;
+    height: 81vh;
     overflow-y: auto;
     scrollbar-color: #212121 #dcdcdc;
     scrollbar-width: thin;
     width: 80%;
     padding-left: 22%;
+	    padding-bottom: 25px;
 }
 
 #sidebar ul::-webkit-scrollbar-track
@@ -567,6 +568,7 @@ width: 100%;
 .gridlistcon{
 display: inline-block;
 margin-left: 15px;
+
 }
 .gridlist{
     display: inline-block;
@@ -634,7 +636,6 @@ width: 100%;
     width: 100%;
     border: none;
     border-bottom: 3px solid #FFC107;
-    border-radius: 0;
     margin: auto 1% 24px 1%;
     padding-bottom: 5px;
     justify-content: space-evenly;
@@ -642,6 +643,7 @@ width: 100%;
     background: none;
     flex-wrap: wrap;
 	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.38);
+	background: rgb(0, 0, 0, 0.22);
 }
 .list:not(.active) .tire {
     position: initial;
@@ -753,7 +755,10 @@ h1 {
 	
 }
 @media (max-width: 768px) {
-
+.gridlistcon {
+    margin-left: 5px;
+    margin-top: 10px;
+}
 
 }
 
