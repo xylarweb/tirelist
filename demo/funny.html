@@ -1,0 +1,419 @@
+<!DOCTYPE html">
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Top Troops WIKI - Squad Summary</title>
+<meta name="description" content="The unit tier list for Top Troops game. This is an unofficial list which was prepared with the help of players from top 25 clans in the game">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script>
+ $(function(){
+    $("#sidebar").load("header.html", function() {
+        // Now bind the event handler after the content is loaded
+        $('#sidebar').on('click', '#sidebacls', function(){
+            $('#sidebar').toggleClass('visible');
+        });
+    }); 
+});
+</script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<style>
+h3{
+text-transform: uppercase;
+font-weight: 600;
+}
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #8BC34A;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+button:disabled {
+pointer-events: none;
+background-color: rgb(204, 204, 204, 0.21);
+}
+.legendaryglow{
+background-image: url("glow.png")!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  animation: fadein 2.5s ease-in ;
+  transition: all .5s ease-in-out;
+      filter: contrast(0.5);
+}
+@keyframes fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    min-height: 54vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.imagcon{
+position: relative;
+width: 200px;
+}
+.unitimg{
+width: 100%;
+padding: 10px;
+}
+.fragunitimg {
+    width: auto;
+    padding: 51px;
+    max-width: 100%;
+    height: 200px;
+}
+.unitfrag {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+</style>
+</head>
+
+<body>
+<div class="bgovl"></div>
+
+
+
+<div style="padding-top: 20px;" >
+<div class="containerc">
+                    <div class="row " >
+
+                    <div class="col-md-12 col-sm-12 " >
+
+                          
+<div class="hdrcon"><div class="logo"> <a href="index.html"><img class="" src="images/logo.png" alt="Top Troops Tirelist"/></a> <h1>TOP TROOPS<br>
+<span class="colr1">SQUAD SUMMARY</span></h1></div>
+
+<a id="sidebar-btn" class="">MENU <img src="images/menu.png" alt=""> </a>
+</div>
+
+<div id="sidebar" class="">
+
+</div>
+
+
+
+
+<div class="container">
+    <h1>Summoning Pit</h1>
+    
+    <div id="result"></div><br>
+
+    
+    <button id="summonButton">Summon</button>
+  </div>
+
+<audio id="epicSound" src="epic.mp3" preload="auto"></audio> 
+<audio id="legendarySound" src="legendary.mp3" preload="auto"></audio>
+<audio id="fragmentsSound" src="fragments.mp3" preload="auto"></audio>
+
+
+
+
+
+
+
+
+
+</div>
+                   
+                   
+ </div>                   
+</div>
+</div>
+
+<a id="toTop" href="#" class="">
+            <img class="" src="images/up.png" alt=""/>  </a>
+
+<div class="overlay"></div>
+
+
+<div class="section" >
+<div class="containerc">
+                    <div class="row " >
+
+                    <div class="col-md-12 col-sm-12 " >
+
+                          
+                   </div>
+                   
+                   
+ </div>                   
+</div>
+</div>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+// Menu-------------------------------------- 
+$(document).ready(function(){
+		$('#sidebar-btn').click(function(){
+			$('#sidebar').toggleClass('visible');
+            
+		});
+	});
+$('#toggle').click(function() {
+   /* $(this).toggleClass('toggle-active');*/
+    $('#sidebar').toggleClass('visible');
+});
+
+
+
+
+// Gototop-------------------------------------- 
+$(window).scroll(function() {
+            if ( $(this).scrollTop() > 500 ) {
+                $('#toTop').addClass('showsx');              
+               
+            } else {
+                $('#toTop').removeClass('showsx');                
+            }
+        });
+
+       $('#toTop').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+});
+
+
+
+const units = [
+ { name: 'Abomination', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Arcane Hunter', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Catapult', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Cleric', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Conductor', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Crabomancer', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Golem', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Merman', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Mushroom Shield', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Necromancer Rat', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Ninja Mole', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Pyromaniac', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Valkyre', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Verleaf', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Warrior Carriage', rarity: 'Epic', unitProb: 0.6667, fragmentProb: 1.3333 },
+{ name: 'Amethyst Aegis', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Amethyst Claymore', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Archangel', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Armored Troll', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Battle Drummer', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Beekeeper', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Berserker', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Blazing Champion', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Bloodlust Bullet', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Boomerang Mercenary', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Dakini', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Demi Angel', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Dwarf Engineer', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Eira', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'El Bandolero', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Elemental Witch', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Ember Elemental', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Explorabbit', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Fire Slasher', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Frozen Heart', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Girtablilu', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Herbalist', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Hermes', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Holy Protector', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Imperial Elf', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Inferno Shredder', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Juggernaut', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Leshy', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Meiga', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Mr Beast', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Oni Warrior', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Ose', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Rainbow Chariot', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Royal Guard', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Samurai', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Sekhmet', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Sharpshooter', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Slime King', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Spirited Tiger', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Stone Hermit', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Storm', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Swash Buckler', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Sylvan Spirit', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'The King', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Thor', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Thundershot', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Toad Druid', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Trickster', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Vampire Queen', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Water Maiden', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Wave Warrior Drenthest', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Werewolf', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Ymir', rarity: 'Legendary', unitProb: 0.08, fragmentProb: 0.2 },
+{ name: 'Assassin', rarity: 'Rare', unitProb: 7, fragmentProb: 0 },
+{ name: 'Blue Wizard', rarity: 'Rare', unitProb: 7, fragmentProb: 0 },
+{ name: 'Draggy', rarity: 'Rare', unitProb: 7, fragmentProb: 0 },
+{ name: 'Orc Rider', rarity: 'Rare', unitProb: 7, fragmentProb: 0 },
+{ name: 'Troll', rarity: 'Rare', unitProb: 7, fragmentProb: 0 },
+
+  
+];
+
+// Array to store only legendary units
+const legendaryUnits = units.filter(unit => unit.rarity === "Legendary");
+
+// Counter to track the number of summons
+let summonCounter = 0;
+
+// Function to select a random unit or fragment based on probability
+function summonUnitOrFragment() {
+  summonCounter++; // Increment the summon counter
+
+  const epicSound = document.getElementById('epicSound');
+  const legendarySound = document.getElementById('legendarySound');
+  const fragmentsSound = document.getElementById('fragmentsSound');
+
+  // Check if it's the 10th summon (guaranteed legendary)
+  if (summonCounter % 50 === 0) {
+    // Guarantee a legendary unit
+    const randomLegendary = legendaryUnits[Math.floor(Math.random() * legendaryUnits.length)];
+
+    // Play legendary sound
+
+     return {
+      type: 'legendary',
+      content: `
+        <div class="imagcon"><img src="images/units/${randomLegendary.name}.png" alt="${randomLegendary.name}" class="unitimg"/></div><br>
+        Summoned Legendary Unit: ${randomLegendary.name} (${randomLegendary.rarity})
+      `
+    };
+  }
+
+  // Regular summon logic (non-guaranteed)
+  const totalProbabilities = units.reduce((sum, unit) => sum + unit.unitProb + unit.fragmentProb, 0);
+  const random = Math.random() * totalProbabilities;
+
+  let cumulative = 0;
+  for (const unit of units) {
+    // Check for unit selection
+    cumulative += unit.unitProb;
+    if (random < cumulative) {
+      // Play regular summon sound
+
+      return {
+        type: unit.rarity.toLowerCase(),
+        content: `
+          <div class="imagcon"><img src="images/units/${unit.name}.png" alt="${unit.name}" class="unitimg"/></div><br>
+          Summoned Unit: ${unit.name} (${unit.rarity})
+        `
+      };
+    }
+
+    // Check for fragment selection
+    cumulative += unit.fragmentProb;
+    if (random < cumulative) {
+
+     return {
+        type: 'fragments',
+        content: `
+          <div class="imagcon"><img src="images/fragment.png" alt="" class="unitfrag"/><img src="images/units/${unit.name}.png" alt="${unit.name}" class="fragunitimg"/></div><br>
+          Summoned Fragment of: ${unit.name} (${unit.rarity})
+        `
+      };
+    }
+  }
+
+   return { type: 'none', content: 'No unit or fragment summoned' }; // Fallback in case something goes wrong
+}
+function stopAllSounds() {
+  const sounds = document.querySelectorAll('audio');
+  sounds.forEach(sound => {
+    sound.pause();
+    sound.currentTime = 0; // Reset playback position
+  });
+}
+
+// Disable the button and play the summon sound
+function handleSummon() {
+    
+    stopAllSounds();
+    
+        $(".bgovl").removeClass('legendaryglow');
+
+  const summonButton = document.getElementById('summonButton');
+  const resultDiv = document.getElementById('result');
+
+    const result = summonUnitOrFragment();
+    switch (result.type) {
+    
+    
+      case 'rare':
+        epicSound.play();
+        break;
+      case 'epic':
+        epicSound.play();
+        break;
+      case 'fragments':
+        setTimeout(() => {
+            fragmentsSound.play();
+            }, 2000); 
+        break;
+      case 'legendary':
+        // Legendary sound can be the same as summonSound or a different one
+        legendarySound.play();
+        $(".bgovl").addClass('legendaryglow');
+        break;
+      default:
+        // No additional sound for "none" type
+        break;
+    }
+
+    
+  // Clear the previous result
+  resultDiv.innerHTML = ""; 
+
+  // Disable button
+  summonButton.disabled = true;
+
+  // Show the result of summoning after 3 seconds
+  setTimeout(() => {
+    resultDiv.innerHTML = result.content; // Use innerHTML to insert HTML with image
+
+    // Re-enable the button after 3 seconds
+    summonButton.disabled = false;
+  }, 2500);  // 3000 milliseconds = 3 seconds
+}
+
+// Event listener for summon button click
+document.getElementById('summonButton').addEventListener('click', handleSummon);
+</script>
+</body>
+
+</html>
