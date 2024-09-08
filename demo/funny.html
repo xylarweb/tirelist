@@ -489,10 +489,7 @@ function handleSummon() {
         epicSound.play();
         break;
       case 'fragments':
-      const interval = setInterval(() => {
-  fragmentsSound.play();
-  clearInterval(interval); // Stop further executions
-}, 2000);
+        fragmentsSound.play();
         break;
       case 'legendary':
         // Legendary sound can be the same as summonSound or a different one
