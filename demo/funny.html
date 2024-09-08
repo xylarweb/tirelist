@@ -17,6 +17,8 @@
 <link rel="preload" as="audio" href="legendary.mp3" />
 <link rel="preload" as="audio" href="fragments.mp3" />
 
+<link rel="preload" as="image" href="images/fragment.png" />
+<link rel="preload" as="image" href="glow.png" />
 <link rel="preload" as="image" href="images/units/Abomination.png" />
 <link rel="preload" as="image" href="images/units/Arcane Hunter.png" />
 <link rel="preload" as="image" href="images/units/Catapult.png" />
@@ -90,8 +92,6 @@
 <link rel="preload" as="image" href="images/units/Draggy.png" />
 <link rel="preload" as="image" href="images/units/Orc Rider.png" />
 <link rel="preload" as="image" href="images/units/Troll.png" />
-<link rel="preload" as="image" href="images/fragment.png" />
-<link rel="preload" as="image" href="glow.png" />
 
 
 <script>
@@ -233,9 +233,9 @@ color: #fff!important;
     <button id="summonButton">Summon</button>
   </div>
 
-<audio id="epicSound" src="epic.mp3" preload="auto"></audio> 
-<audio id="legendarySound" src="legendary.mp3" preload="auto"></audio>
-<audio id="fragmentsSound" src="fragments.mp3" preload="auto"></audio>
+<audio id="epicSound" src="epic.mp3" ></audio> 
+<audio id="legendarySound" src="legendary.mp3" ></audio>
+<audio id="fragmentsSound" src="fragments.mp3" ></audio>
 
 
 
@@ -489,9 +489,10 @@ function handleSummon() {
         epicSound.play();
         break;
       case 'fragments':
-        setTimeout(() => {
-            fragmentsSound.play();
-            }, 2000); 
+      const interval = setInterval(() => {
+  fragmentsSound.play();
+  clearInterval(interval); // Stop further executions
+}, 2000);
         break;
       case 'legendary':
         // Legendary sound can be the same as summonSound or a different one
